@@ -6,7 +6,7 @@
 	"configurations": [
 	  {
 		"name": "debug project_name",
-		"type": "cppdbg",
+		"type": "lldb",
 		"request": "launch",
 		"program": "${workspaceFolder}/project_name",
 		"args": [],
@@ -14,12 +14,6 @@
 		"cwd": "${workspaceFolder}",
 		"environment": [],
 		"externalConsole": false,
-		"osx": {
-		  "MIMode": "lldb"
-		},
-		"linux": {
-		  "MIMode": "gdb"
-		},
 		"preLaunchTask": "Build project_name"
 	  }
 	]
