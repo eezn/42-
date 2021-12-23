@@ -6,7 +6,13 @@
 	"configurations": [
 	  {
 		"name": "debug project_name",
+
+		/* Apple Silicon ARM64 */
 		"type": "lldb",
+
+		/* x86_64 */
+		// "type": "cppdbg",
+		
 		"request": "launch",
 		"program": "${workspaceFolder}/project_name",
 		"args": [],
@@ -14,6 +20,12 @@
 		"cwd": "${workspaceFolder}",
 		"environment": [],
 		"externalConsole": false,
+		"osx": {
+		  "MIMode": "lldb"
+		},
+		"linux": {
+		  "MIMode": "gdb"
+		},
 		"preLaunchTask": "Build project_name"
 	  }
 	]
